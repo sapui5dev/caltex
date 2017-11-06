@@ -1,0 +1,36 @@
+{
+  "dataBinding": {
+    "/webapp/view/Dialog2.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/D0_1463750005259.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/ProductList.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/ProductDetails.view.xml": {
+      "entitySet": "/NewProductRequestSet"
+    },
+    "/webapp/view/NewProduct.view.xml": {
+      "entitySet": ""
+    },
+    "/webapp/view/VendorDetails.view.xml": {
+      "entitySet": "/VendorDetailsSet"
+    }
+  },
+  "generation": [
+    {
+      "templateId": "build_import_prototype",
+      "templateVersion": "1.0.0",
+      "dateTimeStamp": "Mon, 06 Nov 2017 04:48:02 GMT"
+    }
+  ],
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  }
+}

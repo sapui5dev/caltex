@@ -1,0 +1,127 @@
+[{
+	"Cost": 20,
+	"Price": 25,
+	"ItemGroup": "Grocery",
+	"ItemWeight": "250ml",
+	"AvailableQuantity": "20",
+	"ProductName": "Milnes Coriander & Garlic Balsamic Vinegar",
+	"ID": "BL7690-IR",
+	"___FK_02334d668a537fc30ebec33f": "VEND01"
+}, {
+	"Cost": 5,
+	"Price": 10,
+	"ItemGroup": "Grocery",
+	"ItemWeight": "250g",
+	"AvailableQuantity": "100",
+	"ProductName": "Falcon Grove Infused Olive Oil",
+	"ID": "LB3490-SW",
+	"___FK_02334d668a537fc30ebec33f": "VEND03"
+}, {
+	"Cost": 7,
+	"Price": 10,
+	"ItemGroup": "Grocery",
+	"ItemWeight": "130g",
+	"AvailableQuantity": "75",
+	"ProductName": "Top Shed Black Olive Tapenade",
+	"ID": "HC3892-TL",
+	"___FK_02334d668a537fc30ebec33f": "VEND03"
+}, {
+	"Cost": 3,
+	"Price": 8,
+	"ItemGroup": "Stationery",
+	"ItemWeight": "5 Pack",
+	"AvailableQuantity": "50",
+	"ProductName": "Greeting Cards",
+	"ID": "BL5837-CP",
+	"___FK_02334d668a537fc30ebec33f": "VEND02"
+}, {
+	"Cost": 12,
+	"Price": 30,
+	"ItemGroup": "Grocery",
+	"ItemWeight": "120g",
+	"AvailableQuantity": "200",
+	"ProductName": "Gourmet Hazelnuts",
+	"ID": "BM3456-FC",
+	"___FK_02334d668a537fc30ebec33f": "VEND01"
+}, {
+	"Cost": 5015.61,
+	"Price": 24,
+	"ItemGroup": "Very sensitive",
+	"ItemWeight": "5 Oz",
+	"AvailableQuantity": "(10)",
+	"ProductName": "PomeGranate Firming Day Lotion",
+	"ID": "DL3957-PF",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 5009.13,
+	"Price": 20,
+	"ItemGroup": "Very sensitive",
+	"ItemWeight": "4.5 Oz",
+	"AvailableQuantity": "(20)",
+	"ProductName": "Aloe Soothing Day Cream ",
+	"ID": "DC3444-AS",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 6688.29,
+	"Price": 18,
+	"ItemGroup": "Very sensitive",
+	"ItemWeight": "6 Oz",
+	"AvailableQuantity": "(10)",
+	"ProductName": "Aloe Soothing Moisture Lotion",
+	"ID": "ML3778-AS",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 7772.79,
+	"Price": 44,
+	"ItemGroup": "Very sensitive",
+	"ItemWeight": "7 Oz",
+	"AvailableQuantity": "(20)",
+	"ProductName": "Aloe Soothing Night Cream",
+	"ID": "NC4589-AS",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 9428.35,
+	"Price": 54,
+	"ItemGroup": "Very sensitive",
+	"ItemWeight": "8.8 Oz",
+	"AvailableQuantity": "(10)",
+	"ProductName": "Coconut Milk Body Lotion",
+	"ID": "BL3211-CM",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 7349.24,
+	"Price": 10,
+	"ItemGroup": "Very sensitive",
+	"ItemWeight": "5 Oz",
+	"AvailableQuantity": "(20)",
+	"ProductName": "Hemp Face Protector Night ",
+	"ID": "PN4812-HF",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 8413.12,
+	"Price": 28,
+	"ItemGroup": "Senstive ",
+	"ItemWeight": "11 Oz",
+	"AvailableQuantity": "(50)",
+	"ProductName": "PomeGranate Firming Day Cream",
+	"ID": "DC1111-PF",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 1883.59,
+	"Price": 23,
+	"ItemGroup": "Senstive ",
+	"ItemWeight": "12 Oz",
+	"AvailableQuantity": "(20)",
+	"ProductName": "PomeGranate Firming Night Cream",
+	"ID": "NC6788-PF",
+	"___FK_02334d668a537fc30ebec33f": ""
+}, {
+	"Cost": 2716.49,
+	"Price": 32,
+	"ItemGroup": "Senstive ",
+	"ItemWeight": "10 Oz",
+	"AvailableQuantity": "(100)",
+	"ProductName": "Nutraganics Smoothing Night Cream ",
+	"ID": "NC4587-NS",
+	"___FK_02334d668a537fc30ebec33f": ""
+}]

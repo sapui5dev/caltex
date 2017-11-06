@@ -1,0 +1,47 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.trackSalesOrder.controller.ProductList" xmlns:m="sap.m">
+	<m:Page showHeader="true" title="Mudgee - Sydney Road" showFooter="true" showNavButton="false">
+		<m:content>
+			<m:List id="ProductList" mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All"
+				growing="true" growingThreshold="20" growingScrollToLoad="true" itemPress="_onListItemPress"
+				items="{path:'/NewProductRequestSet', parameters:{expand:'NewProductIDetails,VendorDetails'}}">
+				<m:items>
+					<m:ObjectListItem intro="" title="{NewProductIDetails/ProductName}" icon="sap-icon://display" number="" numberState="None" type="Active"
+						showMarkers="false">
+						<m:attributes>
+							<m:ObjectAttribute title="" text="{VendorDetails/Name}" active="false"/>
+							<m:ObjectAttribute text="{CreatedAt}"/>
+						</m:attributes>
+						<m:firstStatus>
+							<m:ObjectStatus text="" state="None"/>
+						</m:firstStatus>
+						<m:secondStatus>
+							<m:ObjectStatus text="{ApprovalStatusDescription}" state="Success"/>
+						</m:secondStatus>
+					</m:ObjectListItem>
+				</m:items>
+				<m:headerToolbar>
+					<m:Toolbar visible="true" enabled="true" width="100%" design="Solid">
+						<m:content>
+							<m:SearchField showSearchButton="true" visible="true" width="100%"/>
+						</m:content>
+					</m:Toolbar>
+				</m:headerToolbar>
+			</m:List>
+		</m:content>
+		<m:footer>
+			<m:Bar design="Auto">
+				<m:contentLeft/>
+				<m:contentMiddle/>
+				<m:contentRight>
+					<m:Button text="" type="Default" icon="sap-icon://add" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress3"/>
+				</m:contentRight>
+			</m:Bar>
+		</m:footer>
+		<m:headerContent>
+			<m:Button text="" type="Default" icon="sap-icon://customer" iconFirst="false" width="auto" enabled="true" visible="true"
+				iconDensityAware="false" press="_onButtonPress4"/>
+		</m:headerContent>
+		<m:subHeader/>
+	</m:Page>
+</mvc:View>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<!-- Copyright (c) 2015 SAP AG, All Rights Reserved -->
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Track Sales Order</title>
+
+		<!-- Bootstrap the UI5 core library -->
+		<script id="sap-ui-bootstrap"
+				src="/resources/sap-ui-core.js"
+                data-sap-ui-libs="sap.m,sap.ui.layout,sap.ui.core"
+				data-sap-ui-theme="sap_bluecrystal"
+                
+                data-sap-ui-xx-supportedLanguages="en"
+                data-sap-ui-xx-bindingSyntax="complex"
+				data-sap-ui-compatVersion="edge" 
+				data-sap-ui-resourceroots='{"com.sap.build.standard.trackSalesOrder":"../"}'
+				data-sap-ui-frameOptions='allow'> // NON-SECURE setting for testing environment
+		</script>
+
+
+		<script type="text/javascript">
+			sap.ui.getCore().attachInit(function() {
+	        //Fake LREP
+	        jQuery.sap.require("sap.ui.fl.FakeLrepConnector");
+	        sap.ui.fl.FakeLrepConnector.enableFakeConnector("fakeLRep.json");
+	       
+           sap.ui.require([
+               "com/sap/build/standard/trackSalesOrder/localService/mockserver"
+			], function (server) {
+                // set up test service for local testing
+                server.init();
+
+                new sap.m.Shell({
+                    app: new sap.ui.core.ComponentContainer({
+                            height : "100%",
+                            name : "com.sap.build.standard.trackSalesOrder"
+                        })
+                    }).placeAt("app");
+				});
+			});
+		</script>
+
+	</head>
+
+	<!-- UI Content -->
+	<body class="sapUiBody" id="app" rootUiArea>
+	</body>
+</html>

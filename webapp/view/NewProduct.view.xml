@@ -1,0 +1,115 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.trackSalesOrder.controller.NewProduct" xmlns:m="sap.m"
+	xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<m:Page showHeader="true" title="New Product Entry" showFooter="true" showNavButton="false">
+		<m:content>
+			<form:Form width="100%" editable="true" visible="true">
+				<form:title>
+					<core:Title text="Product Information" level="Auto"/>
+				</form:title>
+				<form:formContainers>
+					<form:FormContainer visible="true">
+						<form:formElements>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Product Name" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:Input type="Text" value="{newProduct>/NewProductIDetails/ProductName}" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Vendor" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:ComboBox editable="true" selectedKey="{newProduct>/NewProductRequestSet/___FK_548609ad7645d8a60ebec3f5}" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+										<m:items>
+											<core:Item text="Mudgee Hampers" enabled="true" key="VENDOR1"/>
+											<core:Item text="Red Tractor Designs" enabled="true" key="VENDOR2"/>
+											<core:Item text="Little Nomads" enabled="true" key="VENDOR3"/>
+										</m:items>
+									</m:ComboBox>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Cost" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:Input type="Text" showValueHelp="false" value="{newProduct>/NewProductIDetails/Cost}"  enabled="true" visible="true" width="195px" valueHelpOnly="false" maxLength="0"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Price" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:Input type="Text" showValueHelp="false" value="{newProduct>/NewProductIDetails/Price}"  enabled="true" visible="true" width="195px" valueHelpOnly="false" maxLength="0"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Unit of Measure" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:Input type="Text" showValueHelp="false" value="{newProduct>/NewProductIDetails/ItemWeight}" enabled="true" visible="true" width="195px" valueHelpOnly="false" maxLength="0"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Weekly Qty" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:Input type="Text" showValueHelp="false" value="{newProduct>/NewProductIDetails/AvailableQuantity}" enabled="true" visible="true" width="195px" valueHelpOnly="false" maxLength="0"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Item Group" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:Input type="Text" showValueHelp="false" value="{newProduct>/NewProductIDetails/ItemGroup}" enabled="true" visible="true" width="758.984375px" valueHelpOnly="false" maxLength="0"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="Start Date" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:DatePicker enabled="true" visible="true" width="auto" value="{newProduct>/NewProductRequestSet/CreatedAt}" displayFormat="MMM dd, yyyy"/>
+								</form:fields>
+							</form:FormElement>
+							<form:FormElement visible="true">
+								<form:label>
+									<m:Label text="End Date" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit"/>
+								</form:label>
+								<form:fields>
+									<m:DatePicker enabled="true" visible="true" width="auto" value="{newProduct>/NewProductRequestSet/RequestedDate}" displayFormat="MMM dd, yyyy"/>
+								</form:fields>
+							</form:FormElement>
+						</form:formElements>
+						<form:title/>
+					</form:FormContainer>
+				</form:formContainers>
+				<form:layout>
+					<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="1" labelSpanM="2" labelSpanS="12"/>
+				</form:layout>
+			</form:Form>
+		</m:content>
+		<m:footer>
+			<m:Bar design="Auto">
+				<m:contentLeft/>
+				<m:contentMiddle/>
+				<m:contentRight>
+					<m:Button text="Submit" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onSubmit"/>
+					<m:Button text="Cancel" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+						press="_onButtonPress7"/>
+				</m:contentRight>
+			</m:Bar>
+		</m:footer>
+		<m:headerContent/>
+		<m:subHeader/>
+		<m:customHeader/>
+	</m:Page>
+</mvc:View>

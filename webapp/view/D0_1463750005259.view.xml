@@ -1,0 +1,31 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.trackSalesOrder.controller.D0_1463750005259" xmlns:m="sap.m">
+	<m:Dialog horizontalScrolling="true" showHeader="true" state="None" stretch="false" title="Change Customer" type="Standard"
+		verticalScrolling="true">
+		<m:content>
+			<m:List mode="SingleSelectMaster" width="100%" headerText="Header" footerText="" backgroundDesign="Solid" showSeparators="All"
+				growing="false" growingThreshold="20" growingScrollToLoad="false">
+				<m:items>
+					<m:StandardListItem title="Media Store (3271)" description="USA Denver, Internet Sales, Cross-division" info="" infoState="None"
+						type="Active" selected="false"/>
+				</m:items>
+				<m:headerToolbar>
+					<m:Toolbar visible="true" enabled="true" width="" design="Solid">
+						<m:content>
+							<m:SearchField placeholder="Search" showSearchButton="true" visible="true" width="100%"/>
+						</m:content>
+					</m:Toolbar>
+				</m:headerToolbar>
+			</m:List>
+		</m:content>
+		<m:beginButton/>
+		<m:buttons>
+			<m:Button text="OK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onButtonPress1"/>
+			<m:Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"
+				press="_onButtonPress2"/>
+		</m:buttons>
+		<m:customHeader/>
+		<m:endButton/>
+		<m:subHeader/>
+	</m:Dialog>
+</mvc:View>
